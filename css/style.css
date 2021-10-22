@@ -1,2 +1,20 @@
 /* Journey to the Center of the Earth Practicum */
 /* Eric Brown */
+body{
+    margin:4px;
+}
+header,nav,main,aside,footer { 
+    padding:1.4rem;
+    margin:4px 0px 4px 0px;
+    border:3px solid #886644;
+    box-shadow:inset .6rem .6rem .8rem gray;
+    max-width:100%;
+}
+
+header{
+    border-radius:1.4rem 1.4rem 0rem 0rem;
+}
+
+footer{
+    border-radius:0rem 0rem 1.4rem 1.4rem;
+}
