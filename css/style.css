@@ -125,3 +125,22 @@ footer{
     border-radius:0rem 0rem 1.4rem 1.4rem;
     text-align:center;
 }
+
+@media screen and (min-width:768px){
+header>h1{
+    font-size:3rem;
+}
+aside{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+aside>h2{
+    grid-column:1 /span 3;
+}
+.submission{
+    padding:.5rem;
+}
+.signature{
+    text-align:center;
+}
+}
