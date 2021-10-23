@@ -1,20 +1,127 @@
 /* Journey to the Center of the Earth Practicum */
 /* Eric Brown */
+/* *{
+    outline:1px solid red;
+} */
+span:lang(fr),span:lang(is),span:lang(it),span:lang(id){
+    font-style: italic;
+}
+/* fr,is,it,id */
+h2{
+    border-bottom: 1px dashed black;
+    width:100%;
+}
+/* *{
+    outline: 1px solid red;
+} */
+/* Body and global */
+.character{
+    font-weight:bold;
+}
+a{
+    color:black;
+    text-decoration:none;
+}
+a:hover{
+    color:#a52a2a;
+    text-decoration:underline;
+}
 body{
     margin:4px;
+    background:linear-gradient(#765729,black);
+    background-attachment:fixed; 
 }
+
 header,nav,main,aside,footer { 
-    padding:1.4rem;
+    padding:1.3rem;
     margin:4px 0px 4px 0px;
     border:3px solid #886644;
-    box-shadow:inset .6rem .6rem .8rem gray;
+    box-shadow:inset .7rem .7rem .5rem gray;
     max-width:100%;
+    
+}
+nav,main,aside,footer{
+    background-color:rgb(255,255,255,.75);
 }
 
+/* Header Starts Here */
 header{
     border-radius:1.4rem 1.4rem 0rem 0rem;
+    background:url("/img/cave.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:top;
+    box-shadow: inset 1.2rem 1.2rem 1rem; black;
+    text-shadow:2px 2px 1px black;
+    padding:.5rem .5rem 1rem .5rem;
+    background-position:left;
 }
 
+header>h1{
+    font-family:Georgia;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+}
+
+/* Nav Starts Here */
+nav{
+    padding:.5rem;
+}
+
+nav ul{
+    list-style:none;
+    font-size:1rem;
+    margin:0px 0px 0px 0px;
+    padding:.4rem;
+    align-content:flex-end;
+    text-align:center;
+}
+nav ul>li{
+    display:inline;
+    padding:0rem 1rem 0rem 1rem;;
+    border-right:3px double black;
+}
+nav ul>li:last-child{
+    border-right:none;
+}
+
+/* Main Starts Here */
+#cover{
+    float:left;
+    max-width:65%;
+    padding:0rem 1rem 1rem 0rem;
+}
+
+#cryptogram{
+    max-width: 80%;
+    text-align:center;
+    font-style:italic;
+}
+
+main p:first-of-type::first-line{
+    font-size:1.2rem;
+}
+
+/* Aside Starts Here */
+.submission{
+    border: 2px solid black;
+    padding:.6rem;
+    margin: .5rem .6rem .5rem .6rem;
+    background-color:rgb(255,255,255,.40);
+}
+
+.opinion{
+    text-align:center;
+}
+
+.signature{
+    text-align:right;
+    font-style:italic;
+}
+
+/* Footer Starts Here */
 footer{
     border-radius:0rem 0rem 1.4rem 1.4rem;
+    text-align:center;
 }
