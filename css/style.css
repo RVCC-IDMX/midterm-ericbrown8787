@@ -26,15 +26,16 @@ a:hover{
     color:#a52a2a;
     text-decoration:underline;
 }
+
 body{
-    margin:4px;
+    margin:3px;
     background:linear-gradient(#765729,black);
     background-attachment:fixed; 
 }
 
 header,nav,main,aside,footer { 
-    padding:1.3rem;
-    margin:4px 0px 4px 0px;
+    padding:1.3rem; 
+    margin:3px;
     border:3px solid #886644;
     box-shadow:inset .7rem .7rem .5rem gray;
     max-width:100%;
@@ -72,7 +73,7 @@ nav{
 nav ul{
     list-style:none;
     font-size:1rem;
-    margin:0px 0px 0px 0px;
+    margin:5px 0px 5px 0px;
     padding:.4rem;
     align-content:flex-end;
     text-align:center;
@@ -89,18 +90,21 @@ nav ul>li:last-child{
 /* Main Starts Here */
 #cover{
     float:left;
-    max-width:65%;
-    padding:0rem 1rem 1rem 0rem;
+    max-width:200px;
+    padding:0rem 1.2rem 1rem 0rem;
 }
 
 #cryptogram{
-    max-width: 80%;
-    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    max-width: 84%;
+    margin:auto;
     font-style:italic;
 }
 
 main p:first-of-type::first-line{
-    font-size:1.2rem;
+    font-size:1.3rem;
 }
 
 /* Aside Starts Here */
@@ -126,21 +130,52 @@ footer{
     text-align:center;
 }
 
-@media screen and (min-width:768px){
+/* Media Queries */
+
+@media screen and (min-width:768px) {
 header>h1{
     font-size:3rem;
 }
+#cover{
+    max-width:190px;
+}
+
 aside{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
 }
+
 aside>h2{
     grid-column:1 /span 3;
 }
+
 .submission{
     padding:.5rem;
 }
+
 .signature{
     text-align:center;
+}
+}
+
+@media screen and (min-width: 1024px) {
+body{
+    
+    display:grid;
+    grid-template-columns:1fr 300px;
+    margin:auto;
+    max-width:1200px;
+} 
+header,nav,footer{
+    grid-column: 1/span 2;
+}
+#cover{
+    max-width:200px;
+}
+#cryptogram{
+    max-width:500px;
+}
+aside{
+    display:inline;
 }
 }
